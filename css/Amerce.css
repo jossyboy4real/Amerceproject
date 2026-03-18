@@ -35,6 +35,11 @@
     text-decoration: none;
 }
 
+.nav-left a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
 .nav-left span {
     margin-top: -5px;
     display: none;
