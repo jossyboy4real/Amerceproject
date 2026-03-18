@@ -330,6 +330,115 @@ h1 {
     padding-top: 20px;
 }
 
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    width: 750px;
+}
+
+.testimonials {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    color: rgb(16, 16, 16);
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(105, 110, 115);
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card.reverse {
+    flex-direction: row-reverse;
+}
+
+.card img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.content {
+    text-align: left;
+    max-width: 500px;
+}
+
+.stars {
+    color: #f5a623;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(16, 16, 16);
+    margin-bottom: 10px;
+}
+
+.verified {
+    color: green;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.content p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgb(16, 16, 16);
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.product span {
+    color: red;
+    font-weight: bold;
+}
+
 .bottoms {
     width: 95%;
     margin: auto;
@@ -354,7 +463,9 @@ h1 {
     font-size: 13px;
 }
 
-@media (max-width: 450px) {
+
+
+@media (max-width: 500px) {
     .nav-left a {
         display: none;
     }
@@ -485,4 +596,138 @@ h1 {
         width: 100%;
         height: 100%;
     }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .nav-link-1 li a {
+        display: none;
+    }
+
+    .nav-link-2 {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+        font-size: 1.8rem;
+    }
+
+ 
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .hero-text p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .hero-text h3 {
+        display: none;
+    }
+
+    .hero-text button {
+        padding: 12px 25px;
+        font-size: 0.8rem;
+    }
+
+    
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    
+    .album,
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+   
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .women {
+        grid-row: span 1;
+    }
+
+
+    .gallery {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card.reverse {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .product {
+        justify-content: center;
+    }
+
+    .today h2,
+    .trending h2,
+    .Shop h2 {
+        font-size: 26px;
+    }
+
+    .today p,
+    .Shop p,
+    .trending .sub {
+        font-size: 14px;
+    }
+
+    .card.reverse{
+        display: ;
+    }
+    .product{
+        display: none;
+    }
+    
+
 }
